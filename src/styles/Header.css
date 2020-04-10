@@ -1,0 +1,75 @@
+.social-media-icons{
+    height: 30px;
+    width: 30px;
+    margin: 5px;
+}
+
+.header-slogan{
+    margin-top: 15px;
+}
+
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    color: white;
+    padding-top: 3px;
+    padding-left:10px ;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    /* position: fixed;
+    right: 0px;
+    left: 0px; */
+}
+.social-media-container{
+    margin: 0px;
+    padding: 2px;
+}
+
+.menu-nav{
+    list-style-type: none;
+   
+
+    
+    border-bottom: 1px solid blue;
+    padding-top: 6px;
+    padding-bottom: 7px;
+    padding-left: 0px;
+    text-align: center;
+
+}
+
+.menu-nav li{
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 26px;
+    margin-left: 26px;
+
+}
+
+.menu-nav li:hover{
+    background-color: blue;
+    color: white;
+}
+
+
+.brand-name{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size:30px;
+    font-weight: 200;
+    
+}
+.brand-container{
+    display: inline-grid;
+    grid-template-rows: auto auto;
+    
+}
+
+.brand-name-undertext{
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}

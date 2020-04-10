@@ -1,0 +1,11 @@
+.bg-success{
+    background-color: green;
+}
+.bg-brand{
+    background-color: blue;
+    color: white;
+}
+.bg-white{
+    color: blue;
+    background-color: white;
+}
