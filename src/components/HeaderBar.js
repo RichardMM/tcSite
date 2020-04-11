@@ -7,22 +7,27 @@ import TCLogo from '../images/Logo.png'
 
 
 
-export default function Nav(props) {
+export default function HeaderBar(props) {
 
 
     return (
-        <div>
+        <div className="header bg-brand" >
             <div className="brand-container">
             <span className="brand-name">Tiberius &amp; Chelal</span>
             <span className="brand-name-undertext">Surveying|Engineering|GeoSpatial</span>
             </div>
-            <span className="">Traversing life with you parcel by parcel</span>
+            <span className="header-slogan" >Traversing life with you parcel by parcel</span>
+
+       
             
+            <div className="social-media-container">
             <img src={Facebook} alt="social media Logo" className="social-media-icons" />
             <img src={LinkedIn} alt="social media Logo" className="social-media-icons" />
             <img src={Youtube} alt="social media Logo" className="social-media-icons" />
             <img src={Twitter} alt="social media Logo" className="social-media-icons" />
 
+            </div>
+           
         </div>
     )
 }
