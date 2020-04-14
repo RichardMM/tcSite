@@ -21,7 +21,7 @@ export default function NavBar(props){
                 Contact
             </li>
             <li>
-            <button className="btn bg-success">Request Demo</button>
+            <button className="btn bg-success">Request Quote</button>
             </li>
         </ul>
     )

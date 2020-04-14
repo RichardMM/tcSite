@@ -1,0 +1,11 @@
+.slider-panel{
+    background-image: url("https://www.letsbuild.com/wp-content/uploads/2019/10/shutterstock_1247187910-1280x720.png");
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+   
+}
