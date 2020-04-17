@@ -1,12 +1,27 @@
-.btn{
+a[class*="btn"]{
+    display: inline-block;
     border-radius: 5px;
-    width: 130px;
-    height: 40px;
+    text-decoration: none;
+    padding: 7px;
     color: white;
     font-size: 15px;
     cursor: pointer;
-    border-color: grey;
+    border-color:white;
+    border-style: solid;
 }
+
+button[class*="btn"]{
+    display: inline-block;
+    border-radius: 5px;
+    border-style: solid;
+    height: 30px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-color:white;
+}
+
+
 
 *{
 

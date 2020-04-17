@@ -7,6 +7,7 @@ import './styles/colors.css';
 import './styles/utilities.css'
 import './styles/grid_system.css'
 import './styles/form.css'
+import './styles/about.css'
 
 function App() {
   return (

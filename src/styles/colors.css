@@ -1,6 +1,11 @@
 .bg-success{
     background-color: green;
 }
+
+.bg-warning{
+    background-color: red;
+}
+
 .bg-brand{
     background-color: blue;
     color: white;

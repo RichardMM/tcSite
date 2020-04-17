@@ -49,7 +49,7 @@
     }
 }
 
-.menu-nav li{
+.menu-nav li {
     
     cursor: pointer;
     margin-top: 0px;
@@ -58,6 +58,12 @@
     margin-left: 26px;
 
 }
+
+li>a[class*="nav-link"]{
+    text-decoration: none;
+    background-color: inherit;
+    color:inherit;
+    }
 
 .menu-nav li:hover{
     background-color: blue;

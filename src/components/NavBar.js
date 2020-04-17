@@ -1,5 +1,5 @@
 import React from 'react'
-
+/* import {Link} from 'react-router-dom' */
 
 export default function NavBar(props){
 
@@ -9,7 +9,7 @@ export default function NavBar(props){
                 Home
             </li>
             <li>
-                About
+                <a className="nav-link" href="/about">About</a>
             </li>
             <li>
                 Services
@@ -21,7 +21,7 @@ export default function NavBar(props){
                 Contact
             </li>
             <li>
-            <button className="btn bg-success">Request Quote</button>
+            <a className="btn bg-success" href="/quote" >Request Quote</a>
             </li>
         </ul>
     )
