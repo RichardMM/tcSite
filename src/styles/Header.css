@@ -33,11 +33,24 @@
     padding-bottom: 7px;
     padding-left: 0px;
     text-align: center;
+    
 
+}
+@media only screen and (max-width: 600px){
+    .menu-nav li{
+        display: block;
+        border: 1px solid blueviolet;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .menu-nav li{
+        display: inline;
+    }
 }
 
 .menu-nav li{
-    display: inline-block;
+    
     cursor: pointer;
     margin-top: 0px;
     margin-bottom: 0px;

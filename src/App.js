@@ -1,17 +1,19 @@
 import React, {Fragment} from 'react';
 import HeaderBar from './components/HeaderBar'
 import NavBar from './components/NavBar'
-import Slider from './components/Slider'
+import Routes from './Routes'
 import './styles/Header.css';
 import './styles/colors.css';
 import './styles/utilities.css'
+import './styles/grid_system.css'
+import './styles/form.css'
 
 function App() {
   return (
     <Fragment>
       <HeaderBar/>
       <NavBar/>
-      <Slider/>
+     <Routes/>
     </Fragment>
    
 
