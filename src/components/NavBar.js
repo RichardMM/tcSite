@@ -6,7 +6,7 @@ export default function NavBar(props){
     return(
         <ul className="menu-nav bg-white">
             <li>
-                Home
+            <a className="nav-link" href="/">Home</a>
             </li>
             <li>
                 <a className="nav-link" href="/about">About</a>

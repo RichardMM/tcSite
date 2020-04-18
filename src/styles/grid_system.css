@@ -24,7 +24,7 @@
 
 .grid-col-3{
     display: grid;
-    gap: 5px;
+    gap: 10px;
     grid-template-columns: 1fr 1fr 1fr ;
  
 }
@@ -32,6 +32,7 @@
 .grid-col-4{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
+    gap: 15px;
  
 }
 .grid-col-5{
@@ -54,7 +55,7 @@
     
     .grid-col-3{
         display: grid;
-        gap: 5px;
+        gap: 10px;
         grid-template-rows: 1fr 1fr 1fr ;
      
     }
@@ -62,6 +63,7 @@
     .grid-col-4{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr ;
+        gap:10px
      
     }
     .grid-col-5{

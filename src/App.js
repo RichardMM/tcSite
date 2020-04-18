@@ -6,8 +6,10 @@ import './styles/Header.css';
 import './styles/colors.css';
 import './styles/utilities.css'
 import './styles/grid_system.css'
-import './styles/form.css'
+
 import './styles/about.css'
+import './styles/services.css'
+import './styles/quote.css'
 
 function App() {
   return (

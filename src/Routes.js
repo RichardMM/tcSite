@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import QuoteForm from './components/QuoteForm'
 import Slider from './components/Slider'
 import About from './components/About'
+import ServicesSection from './components/Services'
 
 export default function Routes(props) {
     return (
@@ -10,7 +11,12 @@ export default function Routes(props) {
             <Switch>
 
                 <Route exact path="/">
-                    <Slider />
+                    <Fragment>
+
+                        <Slider />
+                        <ServicesSection />
+                    </Fragment>
+
                 </Route>
                 <Route path="/about">
                     <About />
