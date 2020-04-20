@@ -32,10 +32,10 @@ export default function ServicesSection(props) {
     
             <div className="services-group">
             <h1 className="group-title">Services</h1>
-            <div className="services-group-items grid-col-3">
+            <div className="services-group-items grid-col-2">
                 <Service />
                 <Service />
-                <Service />
+             
             
             </div>
             <div className="services-group-items grid-col-3">
