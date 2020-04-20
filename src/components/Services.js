@@ -17,7 +17,7 @@ function Service(props) {
                     is simply dummy text of the printing and typesetting industry.
                     only five centuries, but also the leap into electronic
             </p>
-                <a className="btn bg-brand card-btn" href="#">Read More</a>
+                <a className="btn bg-brand card-btn" href="/">Read More</a>
             </div>
      
     )
