@@ -11,13 +11,13 @@ function Service(props) {
             <div className="card">
 
 
-                <img  className="card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFwbaiJb-f1-DEyeoUcl5crf7WB8IW6REiCMURE3vafifsaZe0&usqp=CAU"  />
+                <img alt="" className="card-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRFwbaiJb-f1-DEyeoUcl5crf7WB8IW6REiCMURE3vafifsaZe0&usqp=CAU"  />
                 <h2 className="card-title">Service</h2>
                 <p className="card-text">
                     is simply dummy text of the printing and typesetting industry.
                     only five centuries, but also the leap into electronic
             </p>
-                <a className="btn bg-brand card-btn">Read More</a>
+                <a className="btn bg-brand card-btn" href="#">Read More</a>
             </div>
      
     )

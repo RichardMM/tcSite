@@ -5,9 +5,7 @@ export default function Slider(props){
     return(
         <div  
          className="slider-panel">
-           <p>
-           We are professional land,mapping and engineering surveyors. 
-           </p>
+           <p className="slider-panel-text">Professional land,mapping and engineering surveyors. </p>
         </div>
         
            
