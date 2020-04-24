@@ -14,7 +14,7 @@ function resize() {
     if(windowQuery.matches){
         return {dims:{'gridTemplateRows':"50% 50%"}, disp:"none"}
     }else{
-        return {dims: {'gridTemplateColumns': "25% 50% 25%"},disp:"block"}
+        return {dims: {'gridTemplateColumns': "20% 60% 20%"},disp:"block"}
 
     }
     
@@ -23,7 +23,7 @@ function resize() {
 
 export default function HeaderBar(props) {
     let initialSize = resize()
-    
+
     let [navDisplay, setNavDisplay] = useState(initialSize["disp"]);
     let [headerDimensions, setHeaderDimensions] = useState(initialSize["dims"]);
 
