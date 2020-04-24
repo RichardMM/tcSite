@@ -7,7 +7,7 @@
 }
 
 .bg-brand{
-    background-color: blue;
+    background-image: linear-gradient(to bottom right, #00338D, rgb(57, 94, 158)) ;
     color: white;
 }
 .bg-white{

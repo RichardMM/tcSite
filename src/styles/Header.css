@@ -4,8 +4,16 @@
     margin: 5px;
 }
 
-.header-slogan{
-    margin-top: 15px;
+.social-media-container{
+    margin: 0px;
+    padding: 2px;
+    justify-self: center;
+}
+
+.nav-icon{
+    height: 40px;
+    width: 40px;
+    justify-self: end;
 }
 
 
@@ -15,62 +23,49 @@
     color: white;
     padding-top: 3px;
     padding-left:10px ;
-    padding-bottom: 5px;
+    
     margin-bottom: 0px;
-   
 }
 
-@media only screen and (min-width: 600px){
-    .header{
-       
-        grid-template-columns: 1fr 2fr 1fr;
-        
-        padding-top: 3px;
-        padding-left:10px ;
-        padding-bottom: 5px;
-        margin-bottom: 0px;
-       
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .header{
-      
-        grid-template-rows: 1fr 1fr 1fr;
-        
-        padding-top: 3px;
-        padding-left:10px ;
-        padding-bottom: 5px;
-        margin-bottom: 0px;
-       
-    }
-}
-
-.social-media-container{
-    margin: 0px;
-    padding: 2px;
-}
 
 .menu-nav{
     list-style-type: none;
-    border-bottom: 1px solid blue;
-    padding-top: 6px;
-    padding-bottom: 7px;
-    padding-left: 0px;
     text-align: center;
-    
 
 }
-@media only screen and (max-width: 600px){
-    .menu-nav li{
-        display: block;
-        border-bottom: 1px solid blue;
-        padding: 5px;
+
+.menu-nav li {
+    
+    cursor: pointer;
+ 
+}
+
+@media only screen and (min-width: 900px){
+    .header{
+       
+        
+        padding-bottom: 5px;
+        
+        
        
     }
-}
+ 
+    .nav-icon{
+        display: none;
+    }
+   
+    .menu-nav{
+      
+       
+        padding-top: 6px;
+        padding-bottom: 7px;
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: center;
+        
+    
+    }
 
-@media only screen and (min-width: 600px){
     .menu-nav li{
         display: inline;
         margin-right: 26px;
@@ -79,14 +74,37 @@
     }
 }
 
-.menu-nav li {
-    
-    cursor: pointer;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    
+@media only screen and (max-width: 900px){
+    .header{
+      
+      
+        padding-bottom: 15px;
+    }
+  
+    .nav-icon{
+        display: initial;
+    }
 
+    .menu-nav{
+    
+       
+        padding-top: 6px;
+        padding-bottom: 7px;
+        padding-left: 0px;
+        text-align: center;
+        
+    
+    }
+    .menu-nav li{
+        display: block;
+        border-bottom: 1px solid white;
+        padding: 5px;
+       
+    }
 }
+
+
+
 
 li>a[class*="nav-link"]{
     text-decoration: none;
@@ -101,13 +119,18 @@ li>a[class*="nav-link"]{
 
 
 .brand-name{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "HCo Gotham SSm",Helvetica,Arial,sans-serif;
     font-style: normal;
     font-size:30px;
     font-weight: 200;
     
 }
 .brand-container{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    
+}
+.brand-container-name{
     display: inline-grid;
     grid-template-rows: auto auto;
     

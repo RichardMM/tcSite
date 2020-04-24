@@ -1,7 +1,12 @@
 .slider-panel{
-    background-image: url("https://www.letsbuild.com/wp-content/uploads/2019/10/shutterstock_1247187910-1280x720.png");
-    height: 500px;
+    /* background-image: url("https://www.letsbuild.com/wp-content/uploads/2019/10/shutterstock_1247187910-1280x720.png"); */
+    background-image: url(../images/rtk/1.png);
+    height: 550px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0px 0px 10px;
     
     
     background-size: cover;
@@ -10,12 +15,33 @@
     
    
 }
+.slider-panel-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .slider-panel-text{
-    display: inline-block;
-    
-    margin:40px 20px 40px 20px;
-    color: white;
+    margin-left: 15px;
+    width:90%;
+    text-align: center;
+   
+    color:white;
+    text-transform: capitalize;
 
-    font-weight: 400;
-    font-size: 70px;
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.slider-panel-content .slider-panel-button{
+    
+    font-size: 20px;
+    
+    border-width: 0px;
+}
+.highlight-text{
+    font-size: inherit;
+    background: -webkit-linear-gradient(#00338D, rgb(57, 94, 158));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

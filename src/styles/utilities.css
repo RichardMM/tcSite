@@ -2,12 +2,13 @@ a[class*="btn"]{
     display: inline-block;
     border-radius: 5px;
     text-decoration: none;
-    padding: 7px;
+    padding: 0.375rem 0.75rem;
     color: white;
     font-size: 15px;
     cursor: pointer;
     border-color:white;
     border-style: solid;
+    border-width: 1px;
 }
 
 button[class*="btn"]{
@@ -27,7 +28,7 @@ button[class*="btn"]{
 
     font-size: 20px;
     font-weight: normal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family:"HCo Gotham SSm",Helvetica,Arial,sans-serif;
     box-sizing: border-box;
     margin-top: 0px;
     margin-bottom: 0px;

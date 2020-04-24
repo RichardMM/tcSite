@@ -1,10 +1,12 @@
-import React from 'react'
-/* import {Link} from 'react-router-dom' */
+import React, {Fragment} from 'react'
 
-export default function NavBar(props){
+
+export default function NavBar({display}){
 
     return(
-        <ul className="menu-nav bg-white">
+    
+       
+        <ul className="menu-nav" style={{display:display}}>
             <li>
             <a className="nav-link" href="/">Home</a>
             </li>
@@ -15,14 +17,18 @@ export default function NavBar(props){
                 Services
             </li>
             <li>
-                Portfolio
+                Blog
             </li>
             <li>
                 Contact
             </li>
             <li>
-            <a className="btn bg-success" href="/quote" >Request Quote</a>
+            <a className="btn bg-success" href="/quote" >Get A Quote</a>
             </li>
         </ul>
+
+
+     
+       
     )
 }
