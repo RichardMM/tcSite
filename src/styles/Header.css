@@ -2,6 +2,7 @@
     height: 30px;
     width: 30px;
     margin: 5px;
+    cursor: pointer;
 }
 
 .social-media-container{
@@ -113,8 +114,8 @@ li>a[class*="nav-link"]{
     }
 
 .menu-nav li:hover{
-    background-color: blue;
-    color: white;
+
+    color: rgb(168, 138, 138);
 }
 
 
