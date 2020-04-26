@@ -1,8 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import Facebook from '../../images/facebook.svg'
-import LinkedIn from '../../images/linkedin.svg'
-import Youtube from '../../images/youtube.svg'
-import Twitter from '../../images/twitter.svg'
+
 
 import hamburgerIcon from '../../images/hamburger.svg' 
 import TCLogo from '../../images/Logo.png'
@@ -56,7 +53,7 @@ export default function HeaderBar(props) {
         let setTo 
         if(navDisplay==="none" ){
             setTo = "inline-block" 
-            setHeaderDimensions({"gridTemplateRows" :"20% 70% 10%"})
+            setHeaderDimensions({"gridTemplateRows" :"20% 80%"})
         }else{
            setTo= "none"
            setHeaderDimensions({"gridTemplateRows" : "50% 50%"})
@@ -82,13 +79,7 @@ export default function HeaderBar(props) {
             
 
 
-            <div className="social-media-container">
-                <img src={Facebook} alt="social media Logo" className="social-media-icons" />
-                <img src={LinkedIn} alt="social media Logo" className="social-media-icons" />
-                <img src={Youtube} alt="social media Logo" className="social-media-icons" />
-                <img src={Twitter} alt="social media Logo" className="social-media-icons" />
-
-            </div>
+           
             
            
 
