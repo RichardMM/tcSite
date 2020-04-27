@@ -11,9 +11,9 @@
   -webkit-text-fill-color: transparent;
     
     font-size: 48px;
-    font-weight: bold;
+    font-weight: 500;
    
-    margin:auto auto 20px auto;
+    margin: 20px auto 40px auto;
     text-align: center;
 }
 
