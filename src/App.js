@@ -3,6 +3,7 @@ import HeaderBar from './components/Nav/HeaderBar'
 import Footer from './components/footer'
 import Routes from './Routes'
 
+
 import './styles/utilities.css'
 
 import './styles/Header.css';
@@ -14,6 +15,7 @@ import './styles/footer.css'
 import './styles/about.css'
 import './styles/services.css'
 import './styles/quote.css'
+import './styles/feedback.css'
 
 function App() {
   return (

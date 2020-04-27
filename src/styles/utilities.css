@@ -32,6 +32,14 @@ button[class*="btn"]{
     box-sizing: border-box;
     margin-top: 0px;
     margin-bottom: 0px;
+    
+}
+
+.home-page-content{
+    background-color: #eef0f1;
+    padding: 0px;
+    margin: 0px;
+    border-width: 0px;
 }
 
 body {

@@ -5,17 +5,20 @@ import Slider from './components/Slider'
 import About from './components/About'
 import ServicesSection from './components/Services'
 
+import FeedBackGroup from './components/clientFeedBack'
+
 export default function Routes(props) {
     return (
         <Router>
             <Switch>
 
                 <Route exact path="/">
-                    <Fragment>
+                    <div className="home-page-content">
 
                         <Slider />
                         <ServicesSection />
-                    </Fragment>
+                        <FeedBackGroup />
+                    </div>
 
                 </Route>
                 <Route path="/about">
