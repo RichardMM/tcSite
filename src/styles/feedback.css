@@ -44,7 +44,11 @@
 
 }
 
-.feed-back-title{
+.client-details{
+    padding-top: 20px;
+}
+
+.feed-back-name{
     font-weight: bold;
 }
 

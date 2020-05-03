@@ -16,6 +16,7 @@ import './styles/about.css'
 import './styles/services.css'
 import './styles/quote.css'
 import './styles/feedback.css'
+import './styles/team.css'
 
 function App() {
   return (

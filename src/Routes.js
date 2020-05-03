@@ -4,6 +4,7 @@ import QuoteForm from './components/QuoteForm'
 import Slider from './components/Slider'
 import About from './components/About'
 import ServicesSection from './components/Services'
+import Team from './components/Team'
 
 import FeedBackGroup from './components/clientFeedBack'
 
@@ -18,6 +19,7 @@ export default function Routes(props) {
                         <Slider />
                         <ServicesSection />
                         <FeedBackGroup />
+                        <Team/>
                     </div>
 
                 </Route>

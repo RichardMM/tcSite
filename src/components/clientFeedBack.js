@@ -14,13 +14,13 @@ function FeedBack(props) {
             <p>
             Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.
             </p>
-            <div className="grid-col-2">
+            <div className="grid-col-2 client-details">
                 <img className="feedback-image" src="https://images.unsplash.com/photo-1518809595274-1471d16319b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=911&q=80" alt=""/>
                 <div>
-                <h4 className="feed-back-title">
+                <h4 className="feed-back-name">
                     Name
                 </h4>
-                <span>Marketing Manger</span>
+                <span>Marketing Manager</span>
                 </div>
               
             </div>

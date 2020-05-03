@@ -4,18 +4,7 @@
     padding-bottom: 20px;
 }
 
-.group-title{
 
-    background: -webkit-linear-gradient(#00338D, rgb(57, 94, 158));
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    
-    font-size: 48px;
-    font-weight: 500;
-   
-    margin: 20px auto 40px auto;
-    text-align: center;
-}
 
 .services-group-items{
     

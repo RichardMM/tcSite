@@ -19,7 +19,7 @@ export default function Footer(props){
                   <li>Setting Out</li>
                   <li>Topographical Surveying</li>
                   <li>Geographic Information Systems (GIS)</li>
-                  <li>Training &amp Development</li>
+                  <li>Training & Development</li>
               </ul>
           </div>
 
