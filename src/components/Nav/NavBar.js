@@ -17,7 +17,7 @@ export default function NavBar({display}){
                 Services
             </li>
             <li>
-                Blog
+            <a className="nav-link" href="/blogs">Blog</a>
             </li>
             <li>
                 Contact

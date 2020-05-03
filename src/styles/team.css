@@ -14,7 +14,7 @@
         grid-column: 2/6;
     
     }
-    .team-card{
+    .team-image{
         grid-column: 1 / 2;
     }
 }
@@ -25,7 +25,7 @@
         grid-row: 2/6;
     
     }
-    .team-card{
+    .team-image{
         grid-row: 1 / 2;
     }
 }
