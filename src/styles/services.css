@@ -25,11 +25,12 @@
     border: 1px solid whitesmoke;
    
     
-    box-shadow: 5px 10px 8px #888888;
+    box-shadow: 5px 5px 8px #888888;
 }
 
 .card-title{
     margin-left: 10px;
+    height: 30px;
     margin-bottom: 15px;
     margin-top: 15px;
     padding-left: 12px;
@@ -46,10 +47,14 @@
 }
 
 .card-text{
-    font-size: 16px;
-    font-family: 'Segoe UI';
+   
     margin: 15px 15px 15px 10px;
     
+}
+
+.card-text *{
+    font-size: 13px;
+    font-family: 'Segoe UI';
 }
 
 

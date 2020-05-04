@@ -1,6 +1,6 @@
 import React, { useEffect, useState, Fragment } from 'react'
 
-import cntClient from './stateManagement'
+import cntClient from '../stateManagement'
 
 
 export default function About(props) {
@@ -12,7 +12,7 @@ export default function About(props) {
             let dt = response.items[0].fields
             setCompanyDetails(dt);
             setDataIsLoaded(true)
-            console.log(dt)
+         
         })
     }, [dataIsloaded])
 

@@ -1,24 +1,16 @@
 import React, {  useEffect, useState } from 'react'
 
-import cntClient from './stateManagement'
-
-
-// function parseContentfulRichText(content){
-//     res = []
-
-//     switch(content.nodeType){
-//         case "paragraph":
-//     <p>{parseContentfulRichText(content.)}</p>
-//     }
-//     if()
-
-// }
+import cntClient from '../stateManagement'
+import parseContent from '../utlities'
 
 
 function Service({displayImage:{fields:{file}},serviceDescription, serviceName}) {
-    console.log(serviceName)
+  
     
-    console.log(serviceDescription)
+    let parsedServices = parseContent(serviceDescription)
+    
+ 
+   
     
 
     return (
@@ -28,10 +20,9 @@ function Service({displayImage:{fields:{file}},serviceDescription, serviceName})
 
                 <img alt="" className="card-image" src={file.url}  />
                 <h2 className="card-title">{serviceName}</h2>
-                <p className="card-text">
-                    is simply dummy text of the printing and typesetting industry.
-                    only five centuries, but also the leap into electronic
-            </p>
+                <div className="card-text">
+                {parsedServices}
+            </div>
          
                 
             </div>
@@ -42,7 +33,7 @@ function Service({displayImage:{fields:{file}},serviceDescription, serviceName})
 
 export default function ServicesSection(props) {
     let [dataIsloaded, setDataIsLoaded] = useState(false)
-    let [serviceArr, setServiceArr] = useState(<h6>Loading...</h6>)
+let [serviceArr, setServiceArr] = useState([<h6 key={1}>Loading...</h6>])
     useEffect(() => {
         cntClient.getEntries({ content_type: "service" }).then((response) => {
             
@@ -62,8 +53,13 @@ export default function ServicesSection(props) {
             <div className="services-group">
             <h1 className="group-title">Services</h1>
             
-            <div className="services-group-items grid-col-5">
-            {serviceArr}
+            <div className="services-group-items grid-col-3">
+            {serviceArr.slice(0,3)}
+                
+              
+            </div>
+            <div className="services-group-items grid-col-3" style={{justifyContent:"center"}}>
+            {serviceArr.slice(3,6)}
                 
               
             </div>

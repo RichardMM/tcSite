@@ -30,7 +30,7 @@ export default function HeaderBar(props) {
             setHeaderDimensions(newSize["dims"])
             setNavDisplay(newSize["disp"])
 
-        console.log('called handle resize')
+       
         
     }
    
