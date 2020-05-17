@@ -51,24 +51,43 @@ export default function QuoteForm(props) {
                         <div className="grid-col-2">
                             <div className="quote-form-group">
                                 <label htmlFor="propertyType">Property Type</label>
-                                <input type="text" id="propertyType" />
+                                <select type="text" id="propertyType">
+                                    <option value=""> </option>
+                                    <option value="Education">Education</option>
+                                    <option value="Government Building">Government Building</option>
+                                    <option value="Healthcare">Healthcare</option>
+                                    <option value="Hotels">Hotels</option>
+                                    <option value="Industrial">Industrial</option>
+                                    <option value="Office">Office</option>
+                                    <option value="Mixed Use">Mixed Use</option>
+                                    <option value="Residential">Residential</option>
+                                    <option value="Retail">Retail</option>
+                                    <option value="Warehouse">Warehouse</option>
+                                    <option value="Other">Other</option>
+                                </select>
                             </div>
                             <div className="quote-form-group">
                                 <label htmlFor="propertyStatus">Property Status</label>
-                                <input type="text" id="propertyStatus" />
+                                <select type="text" id="propertyStatus">
+                                <option value="" selected=""> </option>
+                                <option value="Occupied">Occupied</option>
+                                <option value="Vacant">Vacant</option>
+                                <option value="Under Construction">Under Construction</option>
+                                <option value="Other">Other</option>
+                                </select>
                             </div>
 
                         </div>
                         <div className="grid-col-2">
                             <div className="quote-form-group">
-                                <label htmlFor="sqm">Size(Acres)</label>
+                                <label htmlFor="sqm">Size (Acres)</label>
                                 <input type="text" id="Sqm" />
                             </div>
                             <div className="quote-form-group">
                                 <label htmlFor="location">Location</label>
                                 <input type="text" id="location" />
                             </div>
-                            
+
                         </div>
                         <div className="grid-col-1">
 
@@ -78,12 +97,12 @@ export default function QuoteForm(props) {
                             </div>
                         </div>
                         <div className="grid-col-1">
-                        <div className="quote-form-group">
+                            <div className="quote-form-group">
                                 <label htmlFor="fileUpload">Upload File</label>
                                 <input type="file" id="fileUpload" />
                             </div>
                         </div>
-                        
+
 
                     </div>
                 </div>

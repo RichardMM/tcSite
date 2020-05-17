@@ -11,6 +11,8 @@ export default function parseContent(data) {
 
                 case 'unordered-list':
                     return <ul key={idx}  >{parseContent(el)}</ul>
+                case 'ordered-list':
+                        return <ol key={idx}  >{parseContent(el)}</ol>
                 case "list-item":
                     return <li key={idx}  >{parseContent(el)}</li>
                 case "text":

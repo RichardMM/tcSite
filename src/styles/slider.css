@@ -40,6 +40,7 @@
     border-width: 0px;
 }
 .highlight-text{
+    text-transform: lowercase;
     font-size: inherit;
     background: -webkit-linear-gradient(#00338D, rgb(57, 94, 158));
   -webkit-background-clip: text;

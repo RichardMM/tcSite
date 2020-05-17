@@ -27,7 +27,7 @@ export default function Footer(props){
             <div className="footer-items footer-bordered-item">
             <h3>Our Purpose</h3>
                 <p>
-                We traverse this life with you parcel by parcel”
+                We traverse this life with you parcel by parcel
                 </p>
             </div>
             <div className="footer-items">
