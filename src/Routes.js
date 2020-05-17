@@ -30,7 +30,7 @@ export default function Routes(props) {
                 <Route path="/blogs">
                     <BlogSummaryGroup />
                 </Route>
-                <Route path="/blog/1">
+                <Route path="/blog/:id">
                     <BlogDetail />
                 </Route>
                 <Route path="/quote">

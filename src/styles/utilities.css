@@ -65,3 +65,18 @@ body {
 label{
     display: block;
 }
+
+.contentful-italic{
+    font-style: italic;
+}
+.contentful-underline{
+    text-decoration: underline;
+
+}
+.contentful-code{
+    font-family: monospace;
+}
+
+.contentful-bold{
+    font-weight: bold;
+}

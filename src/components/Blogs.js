@@ -1,30 +1,33 @@
-import React from 'react'
+import React, { useState, useEffect, Fragment } from 'react'
+import { Link, useParams } from 'react-router-dom'
+
+import cntClient from '../stateManagement'
+import parseContent from '../utlities'
+
+function BlogSummary({ mainImage: { fields: { file: { url } } }, title, date, tags, content, moreLink }) {
+
+    
+    let tagArr = tags.map((el, key) => {
+        return <span className="blog-summary-tag bg-brand" key={key}>{el}</span>
+    })
 
 
-
-function BlogSummary(props){
-
-
-    return(
+    return (
 
         <div className="grid-col-5 blog-summary-card">
             <div className="blog-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60" alt="blog" className="blog-image"/>
-            
+                <img src={url} alt="blog" className="blog-image" />
+
             </div>
-           <div className="blog-summary">
-                <h1>Blog Title</h1>
-                <h4>2020-03-01</h4>
-                <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam velit, vulputate eu pharetra nec, 
-                mattis ac neque. Duis vulputate commodo lectus, ac blandit elit tincidunt id. Sed rhoncus, 
-                tortor sed eleifend tristique, tortor mauris molestie elit, et lacinia ipsum quam nec dui. 
-                Quisque nec mauris sit amet elit iaculis pretium sit amet quis magna. Aenean velit odio, ......
-                <span><a href="/blog/1">Read More</a></span>
-                </p>
-                <span className="blog-summary-tag bg-brand">technology</span>
-                <span className="blog-summary-tag bg-brand">rtk</span>
-                <span className="blog-summary-tag bg-brand">Data</span>
+            <div className="blog-summary">
+                <h1>{title}</h1>
+                <h4>{date}</h4>
+                {parseContent(content.content[0], true)}
+                <span>.........</span>
+                <span><Link to={`/blog/${moreLink}`}>Read More</Link></span>
+                <br />
+
+                {tagArr}
 
             </div>
 
@@ -34,29 +37,57 @@ function BlogSummary(props){
 }
 
 
-export function BlogSummaryGroup(props){
+export function BlogSummaryGroup(props) {
+    let [blogSummaries, setBlogSummaries] = useState([])
+    let [dataIsloaded, setDataIsLoaded] = useState(false)
+    useEffect(() => {
+        cntClient.getEntries({ content_type: "blog" }).then((response) => {
+
+            let data = response.items.map((el) => {
+                return <BlogSummary {...el.fields} key={el.sys.id} moreLink={el.sys.id} />
+
+            })
+            setBlogSummaries(data)
+            setDataIsLoaded(true)
+        })
+    }, [dataIsloaded])
 
 
-    return(
+    return (
 
         <div className="blog-summary-group">
-            <BlogSummary/>
-            <BlogSummary/>
-            <BlogSummary/>
-            <BlogSummary/>
-            <BlogSummary/>
+            {blogSummaries}
         </div>
 
     )
 }
 
 
-export function BlogDetail(props){
+export function BlogDetail(props) {
+    let { id } = useParams()
+    let [blogContent, setblogContent] = useState({ title: "Loading...", date: "", content: <span></span> ,mainImage:{fields:{file:{url:""}}}})
+
+    useEffect(() => {
+        cntClient.getEntry({ id }).then((response) => {
+            let dt = response.fields
+            console.log(dt.content)
+            let newState = {title:dt.title, date:dt.date, content:parseContent(dt["content"]),mainImage:dt.mainImage}
+            
+            
+            
+           
+            setblogContent(newState)
+        })
+    }, [blogContent.title])
 
 
-    return(
-
-        <h1>Title</h1>
+    return (
+        <Fragment>
+            <h1>{blogContent.title}</h1>
+            <span>Date: {blogContent.date}</span>
+            <img src={blogContent.mainImage.fields.file.url} alt="blog placeholder" />
+            {blogContent.content}
+        </Fragment>
 
     )
 }
